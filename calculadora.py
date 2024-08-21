@@ -1,7 +1,7 @@
 
 while True:
     operacao= input("escolha qual vai ser operação + - / *:  ")
-
+    
     if operacao != '+' and operacao != '-' and operacao != '/' and operacao != '*':
         print('Digite a operação correta')
         continue
@@ -13,6 +13,23 @@ while True:
         resultado =  num_1 + num_2
         print(f'{num_1} + {num_2} = {resultado}')
 
-    if operacao == '-':
+    elif operacao == '-':
         resultado = num_1 - num_2
         print(f'{num_1} - {num_2} = {resultado} ')
+    
+    elif operacao == '*':
+        resultado = num_1 * num_2
+        print(f'{num_1} * {num_2}: {resultado}')
+    
+    else:
+        ('operação incorreta')
+
+    
+    saida = input('Deseja sair [S]im [N]ão: ').upper()
+
+    if saida == 'N':
+        continue
+    else:
+        break
+
+
